@@ -3,6 +3,6 @@ import App from './App';
 
 test('renders Add-Button', () => {
   render(<App />);
-  const buttonElement = screen.getByText('+');
-  expect(buttonElement).toBeInTheDocument();
+  const linkElement = screen.getByText('+');
+  expect(linkElement).toBeInTheDocument();
 });

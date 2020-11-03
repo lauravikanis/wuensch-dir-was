@@ -1,6 +1,5 @@
 import styled from 'styled-components/macro';
 import PropTypes from 'prop-types';
-import Button from './Button';
 
 const Container = styled.div`
   margin: 10px;
