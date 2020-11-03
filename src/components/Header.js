@@ -5,19 +5,17 @@ import { Link } from 'react-router-dom';
 const MainHeadline = styled.h1`
   font-size: 2.5rem;
   text-align: center;
+  color: #b5525c;
 `;
 
 export default function Header() {
   return (
-    <div>
-      <MainHeadline>
-        <Link to="/Welcome">
-          <span role="img" aria-label="christmastree">
-            🎄
-          </span>
-        </Link>
-        Wishlist
-      </MainHeadline>
-    </div>
+    <MainHeadline>
+      <Link to="/Welcome">
+        <span role="img" aria-label="christmastree">
+          🎄 Wünsch dir was 🎄
+        </span>
+      </Link>
+    </MainHeadline>
   );
 }

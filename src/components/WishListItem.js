@@ -5,7 +5,7 @@ const Container = styled.div`
   margin: 10px;
   padding: 20px;
   border-radius: 5px;
-  border: 2px solid forestgreen;
+  border: 2px solid #8bd5cb;
 `;
 
 export default function WishListItem({ title }) {

@@ -6,7 +6,7 @@ import WishListItem from '../WishListItem';
 export default function welcome() {
   return (
     <div>
-      <WishListItem title="Test" />
+      <WishListItem title="Name" />
       <Link to="/Add">
         <Button>+</Button>
       </Link>

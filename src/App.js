@@ -10,20 +10,20 @@ function App() {
   return (
     <Router>
       <GlobalStyle />
-
-      <Header />
-
-      <Switch>
-        <Route path="/Add">
-          <Add />
-        </Route>
-        <Route path="/wishlist">
-          <Wishlist />
-        </Route>
-        <Route path="/">
-          <Welcome />
-        </Route>
-      </Switch>
+      <main>
+        <Header />
+        <Switch>
+          <Route path="/Add">
+            <Add />
+          </Route>
+          <Route path="/wishlist">
+            <Wishlist />
+          </Route>
+          <Route path="/">
+            <Welcome />
+          </Route>
+        </Switch>
+      </main>
     </Router>
   );
 }
