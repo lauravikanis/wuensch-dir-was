@@ -1,27 +1,17 @@
-import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import Button from './components/Button';
+import WishListItem from './components/WishListItem';
+import GlobalStyle from './GlobalStyle';
 
 function App() {
   return (
     <Router>
-      <ul>
-        <li>
-          <Link to="/">Home</Link>
-        </li>
-        <li>
-          <Link to="/contact">Contact</Link>
-        </li>
-        <li>
-          <Link to="/about">About</Link>
-        </li>
-        <li>
-          <Link to="/Topic">Topics</Link>
-        </li>
-      </ul>
+      <GlobalStyle />
       <Switch>
-        <Route path="/Topic">Topics</Route>
-        <Route path="/about">About</Route>
-        <Route path="/contact">Contact</Route>
-        <Route path="/">Home</Route>
+        <Route path="/">
+          <WishListItem title="Test" />
+          <Button>+</Button>
+        </Route>
       </Switch>
     </Router>
   );
