@@ -11,8 +11,11 @@ function App() {
         <Route path="/">
           <WishListItem title="Test" />
           <Button>
-            <Link to="/wish">+</Link>
+            <Link to="/add">+</Link>
           </Button>
+        </Route>
+        <Route exact path="/add">
+          Replace me with page
         </Route>
       </Switch>
     </Router>
