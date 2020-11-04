@@ -21,7 +21,7 @@ export default function welcome() {
   return (
     <ListContainer>
       {lists?.map((list) => (
-        <Link key={list.id} to={`/${list.title}`}>
+        <Link key={list.id} to={`/${list.id}`}>
           {list.title}
         </Link>
       ))}

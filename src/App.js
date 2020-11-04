@@ -16,7 +16,7 @@ function App() {
           <Route path="/add">
             <Add />
           </Route>
-          <Route path="/:name">
+          <Route path="/:id">
             <Wishlist />
           </Route>
           <Route path="/">
