@@ -1,0 +1,7 @@
+{
+  "lists": [
+    { "id": 1, "title": "Lauras list", "Wishes": "A, B, C" },
+    { "id": 2, "title": "Belas list" },
+    { "id": 3, "title": "Benjamins list" }
+  ]
+}
