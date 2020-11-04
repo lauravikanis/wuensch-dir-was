@@ -1,9 +1,9 @@
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
 import GlobalStyle from './GlobalStyle';
-import Add from './components/pages/Add';
-import Welcome from './components/pages/Welcome';
-import Wishlist from './components/pages/Wishlist';
+import Add from './pages/Add';
+import Welcome from './pages/Welcome';
+import Wishlist from './pages/Wishlist';
 import Header from './components/Header';
 
 function App() {
@@ -13,10 +13,10 @@ function App() {
       <main>
         <Header />
         <Switch>
-          <Route path="/Add">
+          <Route path="/add">
             <Add />
           </Route>
-          <Route path="/wishlist">
+          <Route path="/:name">
             <Wishlist />
           </Route>
           <Route path="/">

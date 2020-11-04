@@ -11,7 +11,7 @@ const MainHeadline = styled.h1`
 export default function Header() {
   return (
     <MainHeadline>
-      <Link to="/Welcome">
+      <Link to="/">
         <span role="img" aria-label="christmastree">
           🎄 Wünsch dir was 🎄
         </span>

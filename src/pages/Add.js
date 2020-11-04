@@ -1,7 +1,7 @@
 import React from 'react';
-import Button from '../Button';
-import WishElement from '../WishElement';
-import WishListItem from '../WishListItem';
+import Button from '../components/Button';
+import WishElement from '../components/WishElement';
+import WishListItem from '../components/WishListItem';
 
 function Add() {
   return (
