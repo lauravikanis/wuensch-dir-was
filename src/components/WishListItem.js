@@ -11,9 +11,9 @@ const Container = styled.div`
 export default function WishListItem({ title }) {
   return (
     <>
-      <form>
+      <>
         <Container>{title}</Container>
-      </form>
+      </>
     </>
   );
 }

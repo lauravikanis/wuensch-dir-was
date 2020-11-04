@@ -3,7 +3,6 @@ import styled from 'styled-components/macro';
 import { Link } from 'react-router-dom';
 
 const MainHeadline = styled.h1`
-  font-size: 2.5rem;
   text-align: center;
   color: #b5525c;
 `;
