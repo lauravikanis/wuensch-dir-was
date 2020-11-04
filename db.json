@@ -1,0 +1,19 @@
+{
+  "lists": [
+    {
+      "id": 1,
+      "title": "Laura",
+      "items": ["Katzen", "Pflanzen", "neue Wohnung"]
+    },
+    {
+      "id": 2,
+      "title": "Bela",
+      "items": ["Gold", "Silber", "Bronze", "Diamanten"]
+    },
+    {
+      "id": 3,
+      "title": "Benjamin",
+      "items": ["Tick", "Tack", "Toe", "Wheeldecide", "Randomgroups"]
+    }
+  ]
+}
