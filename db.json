@@ -3,7 +3,7 @@
     {
       "id": 1,
       "title": "Laura",
-      "items": ["Katzen", "Pflanzen", "neue Wohnung"]
+      "items": ["Pflanzen", "Tee", "Katzen", "neue Wohnung"]
     },
     {
       "id": 2,
@@ -14,6 +14,16 @@
       "id": 3,
       "title": "Benjamin",
       "items": ["Tick", "Tack", "Toe", "Wheeldecide", "Randomgroups"]
+    },
+    {
+      "id": 4,
+      "title": "Marie",
+      "items": ["Plätzchen", "schönes Wetter", "Blumen"]
+    },
+    {
+      "id": 5,
+      "title": "Matthias",
+      "items": ["Schönes Wetter", "Sonne", "Regen", "Gewitter"]
     }
   ]
 }

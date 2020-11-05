@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from 'react';
-import { useParams } from 'react-router-dom';
+import { useHistory, useParams } from 'react-router-dom';
 import styled from 'styled-components/macro';
-import { getListsById } from '../api/lists';
+import { deleteListById, getListsById } from '../api/lists';
+import DangerButton from '../components/DangerButton';
 
 const WishlistContainer = styled.div`
   display: flex;
@@ -11,6 +12,11 @@ const WishlistContainer = styled.div`
   color: white;
   border: 1px solid #b5525c;
   border-radius: 25px;
+  padding-bottom: 2rem;
+
+  ul {
+    padding-inline-start: 0;
+  }
 
   h2 {
     border-bottom: 1px solid white;
@@ -28,6 +34,7 @@ const WishlistContainer = styled.div`
 
 const Wishlist = () => {
   const { listId } = useParams();
+  const history = useHistory();
   const [list, setList] = useState(null);
 
   useEffect(async () => {
@@ -39,6 +46,11 @@ const Wishlist = () => {
     return <h3>Loading...</h3>;
   }
 
+  const handleDelete = async () => {
+    await deleteListById(listId);
+    history.push('/');
+  };
+
   return (
     <WishlistContainer>
       <h2>{list.title}s Liste</h2>
@@ -47,6 +59,9 @@ const Wishlist = () => {
           <li key={item}>{item}</li>
         ))}
       </ul>
+      <DangerButton type="button" onClick={handleDelete}>
+        ✕
+      </DangerButton>
     </WishlistContainer>
   );
 };
